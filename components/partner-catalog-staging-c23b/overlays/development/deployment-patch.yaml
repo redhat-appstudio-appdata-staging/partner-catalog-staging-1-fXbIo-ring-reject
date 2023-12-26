@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog-staging-c23b
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/beaumorley-tenant/partner-catalog-staging-1/partner-catalog-staging-c23b@sha256:ed749e66c3ec7180c13c08f758bee922502e8d65cb41d0ef3b579983c4a1fd45
+        name: my-java-springboot
+        resources: {}
+status: {}
